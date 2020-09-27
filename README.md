@@ -25,7 +25,9 @@ $ pip install -r requirements.txt
 ## Changes for "Person Only" Object Detection
 
 > Modified coco.names to contain only the "person" row.
+
 > Modified lines 610, 696, 783 in yolov3.cfg from "80" to "1".
+
 > Modified lines 603, 689, 776 in yolov3.cfg from "255" to "18" ([classes * 3] + 15).
 
 ## Training
