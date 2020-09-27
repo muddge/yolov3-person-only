@@ -22,6 +22,12 @@ $ pip install -r requirements.txt
 * [A TensorRT Implementation of YOLOv3 and YOLOv4](https://github.com/wang-xinyu/tensorrtx/tree/master/yolov3-spp) 
 
 
+## Changes for "Person Only" Object Detection
+
+> Modified coco.names to contain only the "person" row.
+> Modified lines 610, 696, 783 in yolov3.cfg from "80" to "1".
+> Modified lines 603, 689, 776 in yolov3.cfg from "255" to "18" ([classes * 3] + 15).
+
 ## Training
 
 **Start Training:** `python3 train.py` to begin training after downloading COCO data with `data/get_coco2017.sh`. Each epoch trains on 117,263 images from the train and validate COCO sets, and tests on 5000 images from the COCO validate set.
